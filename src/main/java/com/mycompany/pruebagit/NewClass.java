@@ -9,8 +9,27 @@ package com.mycompany.pruebagit;
  * @author ALEJANDRA MENSAQUE
  */
 public class NewClass {
-    public static void main(String[] args) {
-        System.out.println("Otra clase");
-    }
+     private String nombre;
+    private int edad;
     
+    public NewClass(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Método 1: mostrar información
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+    }
+
+    // Método 2: comprobar si es mayor de edad
+    public boolean esMayorDeEdad() {
+        return edad >= 18;
+    }
 }
+    
+    
+    
+    
+
